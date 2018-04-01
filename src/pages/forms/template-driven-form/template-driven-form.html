@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>TemplateDrivenForm</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
+    
+    <ion-item>
+      <ion-label>Username</ion-label>
+      <ion-input type="text" name="username" 
+        [(ngModel)]="user.username"
+        #username="ngModel"
+        required></ion-input>     
+    </ion-item>
+    <div padding [hidden]="username.valid || username.pristine">
+      Username is required.
+    </div>
+
+    <ion-item>
+      <ion-label>Password</ion-label>
+      <ion-input type="password" name="password" 
+        [(ngModel)]="user.password" 
+        #password="ngModel"
+        required></ion-input>
+    </ion-item>
+    <div padding [hidden]="password.valid || password.pristine">
+      Password is required.
+    </div>
+
+    <div padding>
+      <button ion-button [disabled]="!loginForm.valid">Login</button>
+    </div>
+
+  </form>
+
+</ion-content>

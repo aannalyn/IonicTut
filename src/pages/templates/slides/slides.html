@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Slides</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <button ion-item *ngFor="let page of pages" (click)="openPage(page.component)">{{ page.title }}</button>
+  </ion-list>
+
+
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Range</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item-divider color="light">Number <ion-badge>{{fontsize}}</ion-badge></ion-item-divider>
+    <ion-item>
+      <ion-range min="0" max="20" [(ngModel)]="fontsize">
+        <ion-label range-left>0</ion-label>
+        <ion-label range-right>20</ion-label>
+      </ion-range>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

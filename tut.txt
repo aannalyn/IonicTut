@@ -1,0 +1,60 @@
+- Install Nodejs
+> npm install -g ionic cordova
+> ionic start MyApp 
+> ionic serve -l
+ 
+------------------------
+CSS Utitlity Attributes
+------------------------
+---> General
+ion-fixed
+tappable
+
+---> <ion-list>
+no-lines
+inset
+
+---> <ion-item>
+detail-none, detail-push
+item-left, item-right, item-content
+text-wrap
+
+---> <button>
+ion-button
+icon-only
+icon-right, icon-left
+full, block, round, outline, clear
+large, small
+ion-item
+
+---> <ion-input>
+fixed
+floating
+inline
+stacked
+
+---> <ion-content>
+padding, no-padding
+padding-top, padding-right, padding-bottom, padding-left, padding-horizontal, padding-vertical
+margin
+margin-top, margin-right, margin-bottom, margin-left, margin-horizontal, margin-vertical
+
+---> <ion-col>
+width-10,20,25,33,34,50,66,67,75,80,90
+offset-10,20,25,33,34,50,66,67,75,80,90
+top, bottom, center
+
+---> <ion-row>
+wrap
+top, bottom, center
+responsive-sm, responsive-md, responsive-lg
+
+---> <ion-header>
+no-border 
+
+---> <ion-navbar>
+transparent
+
+---> <ion-buttons>
+start, end, left, right
+

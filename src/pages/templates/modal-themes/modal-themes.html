@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Modal Themes</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <ion-list>
+    <button ion-item *ngFor="let page of pages" (click)="openModal(page.component)">{{ page.title }}</button>
+  </ion-list>
+
+</ion-content>
